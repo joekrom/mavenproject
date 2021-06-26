@@ -56,6 +56,22 @@
 	  			</execution>
 	  		</executions>
 	  	</plugin>
+	  	
+	  	<!-- We add the hereku plugin for the deployement  -->
+	  	<plugin>
+	        <groupId>com.heroku.sdk</groupId>
+	        <artifactId>heroku-maven-plugin</artifactId>
+	        <version>3.0.3</version>
+	        <configuration>
+	        	<jdkVersion>1.8</jdkVersion>
+	        	<!-- Use your own application name on heroku -->
+	        	<appName>mavenspark</appName>
+	        	<!-- Tell Heroku how to launch your application -->
+	        	<processTypes>
+	        		<web>java -jar javaspark-0.0.1-SNAPSHOT.jar</web>
+	        	</processTypes>
+	        </configuration>
+      </plugin>
   	</plugins>
   </build>
   
