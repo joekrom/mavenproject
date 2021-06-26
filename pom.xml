@@ -68,7 +68,7 @@
 	        	<appName>mavenspark</appName>
 	        	<!-- Tell Heroku how to launch your application -->
 	        	<processTypes>
-	        		<web>java -jar javaspark-0.0.1-SNAPSHOT.jar</web>
+	        		<web>java -jar ./target/javaspark-0.0.1-SNAPSHOT.jar</web>
 	        	</processTypes>
 	        </configuration>
       </plugin>
